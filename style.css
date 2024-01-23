@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111; /* Darkest background color */
+    color: #ddd; /* Light mode text color */
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode body {
+    background-color: #333;
+    color: #fff; /* Dark mode text color */
+}
+
+.file-system {
+    margin: 20px;
+    background-color: #222; /* Darker background color */
+    border: 1px solid #444; /* Darker border color */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+}
+
+
+.dark-mode .file-system {
+    background-color: #333;
+    border-color: #666;
+}
+
+.folder, .file {
+    list-style: circle;
+    margin: 0;
+    padding: 0;
+}
+
+.folder-toggle {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.folder img {
+    width: 24px;
+    height: 24px;
+    vertical-align: sub;
+}
+
+.file-list {
+    margin-left: 20px;
+    display: none;
+}
+
+.file, .folder {
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+.folder-toggle {
+    padding-left: 30px; /* İkon genişliği kadar sola boşluk ekleyerek metni kaydır */
+    padding-right: 23px;
+    background: url('opened_folder.svg') left center no-repeat; /* İkonu arka plan olarak ekle */
+    background-size: 22px 22px; /* İkonun boyutunu ayarla */
+}
+
+.file i{
+    padding-left: 23px; /* İkon genişliği kadar sola boşluk ekleyerek metni kaydır */
+    /* padding-right: 23px; */
+    background: url('dart.svg') left top no-repeat; /* İkonu arka plan olarak ekle */
+    background-size: 20px 20px; /* İkonun boyutunu ayarla */
+}
+
+.file:hover, .folder:hover {
+    background-color: #333;
+}
+
+.dark-mode .file, .dark-mode .folder {
+    background-color: #444;
+    border-color: #666;
+}
+
+.show {
+    display: block;
+}
+
+.file-list p {
+  color: gray;
+}
+
+.file-list img {
+    width: 23px;
+    height: 23px;
+    vertical-align: middle;
+}
+
+.file-list p.show {
+    display: block; /* Tıklandığında açıklamayı göster */
+}
+
+
+/* Header Style */
+.file-system h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Footer Style */
+.file-system footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.dark-mode .file-system footer {
+    background-color: #444;
+}
+
+/* Tree Lines */
+.folder::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-left: 1px solid #ccc;
+    height: 100%;
+}
+
+/* .file::before {
+    content: "";
+    position: absolute;
+    top:50%;
+    left: 0;
+    border-left: 1px solid #ccc;
+    height: 100%;
+} */
+
+.folder::before, .dark-mode .folder::before,
+.file::before, .dark-mode .file::before {
+    width: 20px;
+}
+
+.dark-mode .folder::before, .dark-mode .file::before {
+    border-left-color: #666;
+}
