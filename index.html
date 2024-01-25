@@ -51,27 +51,27 @@
                                         <ul class="file-list">
                                             <li class="file"><i>handler.dart</i>
                                                 <p>
-                                                    File where words are collected
+                                                    To handle API errors and check whether internet is available.
                                                 </p>
                                             </li>
                                             <li class="file"><i>header.dart</i>
                                                 <p>
-                                                    File where words are collected
+                                                    To set API headers
                                                 </p>
                                             </li>
                                             <li class="file"><i>isolate_core.dart</i>
                                                 <p>
-                                                    File where words are collected
+                                                    To run all possible APIs in parallel
                                                 </p>
                                             </li>
                                             <li class="file"><i>response_model.dart</i>
                                                 <p>
-                                                    File where words are collected
+                                                    To use the incoming response correctly
                                                 </p>
                                             </li>
                                             <li class="file"><i>urls.dart</i>
                                                 <p>
-                                                    File where words are collected
+                                                    To collect URLs
                                                 </p>
                                             </li>
                                         </ul>
@@ -79,17 +79,17 @@
                                     <!-- !api -->
                                     <li class="file"><i>entities.dart</i>
                                         <p>
-                                            File where words are collected
+                                            To collect models and other types
                                         </p>
                                     </li>
                                     <li class="file"><i>exports.dart</i>
                                         <p>
-                                            File where enums are collected
+                                            To collect all imports
                                         </p>
                                     </li>
                                     <li class="file"><i>query.dart</i>
                                         <p>
-                                            File where tags are collected
+                                            Model for all queries
                                         </p>
                                     </li>
                                     <!-- result -->
@@ -98,17 +98,17 @@
                                         <ul class="file-list">
                                             <li class="file"><i>result.dart</i>
                                                 <p>
-                                                    File where words are collected
+                                                    Model that takes 2 possible types
                                                 </p>
                                             </li>
                                             <li class="file"><i>result_error.dart</i>
                                                 <p>
-                                                    File where words are collected
+                                                    Error part of a model that takes 2 possible types
                                                 </p>
                                             </li>
                                             <li class="file"><i>result_success.dart</i>
                                                 <p>
-                                                    File where words are collected
+                                                    Successful part of a model that takes 2 possible types
                                                 </p>
                                             </li>
 
@@ -124,20 +124,185 @@
                                 <ul class="file-list">
                                     <li class="file"><i>app_route.dart</i>
                                         <p>
-                                            File where words are collected
+                                            Routing pages collected page
                                         </p>
                                     </li>
                                     <li class="file"><i>go_to.dart</i>
                                         <p>
-                                            File where words are collected
+                                            Routing logic and methods
                                         </p>
                                     </li>
                                 </ul>
                             </li>
                             <!-- !routes -->
+                            <!-- services -->
+                            <li class="folder">
+                                <span class="folder-toggle">services</span>
+                                <ul class="file-list">
+                                    <!--funcs-->
+                                    <li class="folder">
+                                        <span class="folder-toggle">funcs</span>
+                                        <ul class="file-list">
+                                            <li class="file"><i>keyboard.dart</i>
+                                                <p>
+                                                    To control the keyboard
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>my_orientation.dart</i>
+                                                <p>
+                                                    To control the system orientation
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>my_size.dart</i>
+                                                <p>
+                                                    To get and use device size
+                                                </p>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <!-- !funcs -->
+                                    <!--packages-->
+                                    <li class="folder">
+                                        <span class="folder-toggle">packages</span>
+                                        <ul class="file-list">
+                                            <!--dio-->
+                                            <li class="folder">
+                                                <span class="folder-toggle">dio</span>
+                                                <ul class="file-list">
+                                                    <li class="file"><i>cookie_manager.dart</i>
+                                                        <p>
+                                                            Cookie settings and interseptr manager
+                                                        </p>
+                                                    </li>
+                                                    <li class="file"><i>dio_clent.dart</i>
+                                                        <p>
+                                                            To api requests and responses
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <!--!dio-->
+                                            <li class="file"><i>connect_service.dart</i>
+                                                <p>
+                                                    Package to check whether there is internet, wifi or mobile
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>hive_boxes.dart</i>
+                                                <p>
+                                                    Package for local data base
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>toast_service.dart</i>
+                                                <p>
+                                                    Package for showe toasts
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!--!packages-->
+                                </ul>
+                            </li>
+                            <!-- !services -->
+                            <!-- theme -->
+                            <li class="folder">
+                                <span class="folder-toggle">theme</span>
+                                <ul class="file-list">
+                                    <li class="file"><i>colors.dart</i>
+                                        <p>
+                                            To collect colors
+                                        </p>
+                                    </li>
+                                    <li class="file"><i>my_theme.dart</i>
+                                        <p>
+                                            To set system theme
+                                        </p>
+                                    </li>
+                                    <li class="file"><i>styles.dart</i>
+                                        <p>
+                                            To collect styles
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- !theme -->
                         </ul>
                     </li>
                     <!-- !config -->
+                    <!-- data -->
+                    <li class="folder">
+                        <span class="folder-toggle">data</span>
+                        <ul class="file-list">
+                            <!-- data_sources -->
+                            <li class="folder">
+                                <span class="folder-toggle">data_sources</span>
+                                <ul class="file-list">
+                                    <li class="file"><i>colors.dart</i>
+                                        <p>
+                                            To collect colors
+                                        </p>
+                                    </li>
+                                    <li class="file"><i>my_theme.dart</i>
+                                        <p>
+                                            To set system theme
+                                        </p>
+                                    </li>
+                                    <li class="file"><i>styles.dart</i>
+                                        <p>
+                                            To collect styles
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- !data_sources -->
+                            <!-- models -->
+                            <li class="folder">
+                                <span class="folder-toggle">models</span>
+                                <ul class="file-list">
+                                    <li class="file"><i>colors.dart</i>
+                                        <p>
+                                            To collect colors
+                                        </p>
+                                    </li>
+                                    <li class="file"><i>my_theme.dart</i>
+                                        <p>
+                                            To set system theme
+                                        </p>
+                                    </li>
+                                    <li class="file"><i>styles.dart</i>
+                                        <p>
+                                            To collect styles
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- !models -->
+                            <!-- repositories -->
+                            <li class="folder">
+                                <span class="folder-toggle">repositories</span>
+                                <ul class="file-list">
+                                    <li class="file"><i>colors.dart</i>
+                                        <p>
+                                            To collect colors
+                                        </p>
+                                    </li>
+                                    <li class="file"><i>my_theme.dart</i>
+                                        <p>
+                                            To set system theme
+                                        </p>
+                                    </li>
+                                    <li class="file"><i>styles.dart</i>
+                                        <p>
+                                            To collect styles
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- !repositories -->
+
+                        </ul>
+                    </li>
+                    <!-- !data -->
                 </ul>
             </li>
         </ul>

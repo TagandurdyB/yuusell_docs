@@ -123,10 +123,10 @@ body {
 }
 
 /* Tree Lines */
-.folder::before {
+.folder::before , .file::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 0%;
     left: 0;
     border-left: 1px solid #ccc;
     height: 100%;
