@@ -237,21 +237,23 @@
                             <li class="folder">
                                 <span class="folder-toggle">data_sources</span>
                                 <ul class="file-list">
-                                    <li class="file"><i>colors.dart</i>
-                                        <p>
-                                            To collect colors
-                                        </p>
+                                    <!-- product -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">product</span>
+                                        <ul class="file-list">
+                                            <li class="file"><i>product_local.dart</i>
+                                                <p>
+                                                    To retrieve data from local when connection is lost
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>product_remote.dart</i>
+                                                <p>
+                                                    To request api
+                                                </p>
+                                            </li>
+                                        </ul>
                                     </li>
-                                    <li class="file"><i>my_theme.dart</i>
-                                        <p>
-                                            To set system theme
-                                        </p>
-                                    </li>
-                                    <li class="file"><i>styles.dart</i>
-                                        <p>
-                                            To collect styles
-                                        </p>
-                                    </li>
+                                    <!-- !product -->
                                 </ul>
                             </li>
                             <!-- !data_sources -->
@@ -259,21 +261,8 @@
                             <li class="folder">
                                 <span class="folder-toggle">models</span>
                                 <ul class="file-list">
-                                    <li class="file"><i>colors.dart</i>
-                                        <p>
-                                            To collect colors
-                                        </p>
-                                    </li>
-                                    <li class="file"><i>my_theme.dart</i>
-                                        <p>
-                                            To set system theme
-                                        </p>
-                                    </li>
-                                    <li class="file"><i>styles.dart</i>
-                                        <p>
-                                            To collect styles
-                                        </p>
-                                    </li>
+                                    <li class="file"><i>catalog_model.dart</i> </li>
+                                    <li class="file"><i>product_model.dart</i> </li>
                                 </ul>
                             </li>
                             <!-- !models -->
@@ -281,28 +270,616 @@
                             <li class="folder">
                                 <span class="folder-toggle">repositories</span>
                                 <ul class="file-list">
-                                    <li class="file"><i>colors.dart</i>
+                                    <li class="file"><i>product_repository.dart</i>
                                         <p>
-                                            To collect colors
-                                        </p>
-                                    </li>
-                                    <li class="file"><i>my_theme.dart</i>
-                                        <p>
-                                            To set system theme
-                                        </p>
-                                    </li>
-                                    <li class="file"><i>styles.dart</i>
-                                        <p>
-                                            To collect styles
+                                            To convert request to models
                                         </p>
                                     </li>
                                 </ul>
                             </li>
                             <!-- !repositories -->
-
                         </ul>
                     </li>
                     <!-- !data -->
+                    <!-- presentation -->
+                    <li class="folder">
+                        <span class="folder-toggle">presentation</span>
+                        <ul class="file-list">
+                            <!-- cubits -->
+                            <li class="folder">
+                                <span class="folder-toggle">cubits</span>
+                                <ul class="file-list">
+                                    <!-- internet -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">internet</span>
+                                        <ul class="file-list">
+                                            <li class="file"><i>internet_cubit.dart</i>
+                                                <p>
+                                                    State management object for the connection
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>internet_state.dart</i>
+                                                <p>
+                                                    State object
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !internet -->
+                                    <!-- nav -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">nav</span>
+                                        <ul class="file-list">
+                                            <li class="file"><i>nav_cubit.dart</i>
+                                                <p>
+                                                    State management object for the navigation
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>nav_state.dart</i>
+                                                <p>
+                                                    State object
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !nav -->
+                                    <!-- resonsive -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">resonsive</span>
+                                        <ul class="file-list">
+                                            <li class="file"><i>resonsive_cubit.dart</i>
+                                                <p>
+                                                    State management object for responsive design
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>resonsive_state.dart</i>
+                                                <p>
+                                                    State object
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !resonsive -->
+                                    <!-- theme -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">theme</span>
+                                        <ul class="file-list">
+                                            <li class="file"><i>theme_cubit.dart</i>
+                                                <p>
+                                                    State management object for theme, text, color
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>theme_state.dart</i>
+                                                <p>
+                                                    State object
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !theme -->
+                                </ul>
+                            </li>
+                            <!-- !cubits -->
+                            <!-- feautures -->
+                            <li class="folder">
+                                <span class="folder-toggle">feautures</span>
+                                <ul class="file-list">
+                                    <!-- about -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">about</span>
+                                        <ul class="file-list">
+                                            <li class="folder">
+                                                <span class="folder-toggle">widgets</span>
+                                                <ul class="file-list">
+                                                    <li class="file"><i>about_part.dart</i>
+                                                        <p>
+                                                            About part ui widget
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="file"><i>about_page.dart</i>
+                                                <p>
+                                                    About ui Page
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !about -->
+                                    <!-- cart -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">cart</span>
+                                        <ul class="file-list">
+                                            <li class="folder">
+                                                <span class="folder-toggle">widgets</span>
+                                                <ul class="file-list">
+                                                    <li class="file"><i>checkout_card.dart</i>
+                                                        <p>
+                                                            Top card from cart screen checkout ui widget
+                                                        </p>
+                                                    </li>
+                                                    <li class="file"><i>chosen_actions.dart</i>
+                                                        <p>
+                                                            Chosen products bottom acttion
+                                                        </p>
+                                                    </li>
+                                                    <li class="file"><i>chosen_card.dart</i>
+                                                        <p>
+                                                            Chosen products list widget
+                                                        </p>
+                                                    </li>
+                                                    <li class="file"><i>chosen_item.dart</i>
+                                                        <p>
+                                                            Chosen product widget
+                                                        </p>
+                                                    </li>
+                                                </ul>
+
+                                            </li>
+                                            <li class="file"><i>about_page.dart</i>
+                                                <p>
+                                                    Cart ui screen
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !cart -->
+                                    <!-- cataolg -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">cataolg</span>
+                                        <ul class="file-list">
+                                            <li class="folder">
+                                                <span class="folder-toggle">cubit</span>
+                                                <ul class="file-list">
+                                                    <li class="file"><i>cataolg_cubit.dart</i>
+                                                        <p>
+                                                            State management object for catalog
+                                                        </p>
+                                                    </li>
+                                                    <li class="file"><i>cataolg_cubit.freezed.dart</i>
+                                                        <p>
+                                                            Generated file for freezed functions
+                                                        </p>
+                                                    </li>
+                                                    <li class="file"><i>cataolg_state.dart</i>
+                                                        <p>
+                                                            State object
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="folder">
+                                                <span class="folder-toggle">widgets</span>
+                                                <ul class="file-list">
+                                                    <li class="file"><i>catalog_card.dart</i>
+                                                        <p>
+                                                            Catalog item ui widget
+                                                        </p>
+                                                    </li>
+                                                    <li class="file"><i>catalog_view.dart</i>
+                                                        <p>
+                                                            Catalog view ui widget
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="file"><i>catalog_screen.dart</i>
+                                                <p>
+                                                    Catalog ui screen
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !cataolg -->
+                                    <!-- detail -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">detail</span>
+                                        <ul class="file-list">
+                                            <li class="folder">
+                                                <span class="folder-toggle">widgets</span>
+                                                <ul class="file-list">
+                                                </ul>
+                                            </li>
+                                            <li class="file"><i>detail_page.dart</i>
+                                                <p>
+                                                    Product detail ui page
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !detail -->
+                                    <!-- home -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">home</span>
+                                        <ul class="file-list">
+                                            <li class="folder">
+                                                <span class="folder-toggle">cubit</span>
+                                                <ul class="file-list">
+                                                    <li class="folder">
+                                                        <span class="folder-toggle">banner</span>
+                                                        <ul class="file-list">
+                                                            <li class="file"><i>banner_cubit.dart</i>
+                                                                <p>
+                                                                    State management object for banner
+                                                                </p>
+                                                            </li>
+                                                            <li class="file"><i>banner_cubit.freezed.dart</i>
+                                                                <p>
+                                                                    Generated file for freezed functions
+                                                                </p>
+                                                            </li>
+                                                            <li class="file"><i>banner_state.dart</i>
+                                                                <p>
+                                                                    State object
+                                                                </p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="folder">
+                                                        <span class="folder-toggle">product</span>
+                                                        <ul class="file-list">
+                                                            <li class="file"><i>product_cubit.dart</i>
+                                                                <p>
+                                                                    State management object for dashboard products
+                                                                </p>
+                                                            </li>
+                                                            <li class="file"><i>product_cubit.freezed.dart</i>
+                                                                <p>
+                                                                    Generated file for freezed functions
+                                                                </p>
+                                                            </li>
+                                                            <li class="file"><i>product_state.dart</i>
+                                                                <p>
+                                                                    State object
+                                                                </p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="folder">
+                                                <span class="folder-toggle">widgets</span>
+                                                <ul class="file-list">
+                                                    <li class="folder">
+                                                        <span class="folder-toggle">products</span>
+                                                        <ul class="file-list">
+                                                            <li class="file"><i>product_card.dart</i>
+                                                                <p>
+                                                                    Product card ui widget
+                                                                </p>
+                                                            </li>
+                                                            <li class="file"><i>product_view.dart</i>
+                                                                <p>
+                                                                    Product view ui widget
+                                                                </p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="file"><i>carusel_widget.dart</i>
+                                                        <p>
+                                                            Banners carusel ui widget
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="file"><i>home_page.dart</i>
+                                                <p>
+                                                    Home ui Page
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>home_screen.dart</i>
+                                                <p>
+                                                    Dashboard ui screen
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !home -->
+                                    <!-- login -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">login</span>
+                                        <ul class="file-list">
+                                            <li class="folder">
+                                                <span class="folder-toggle">widgets</span>
+                                                <ul class="file-list">
+                                                    <li class="file"><i>login_form.dart</i>
+                                                        <p>
+                                                            Login form ui widget
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="file"><i>login_screen.dart</i>
+                                                <p>
+                                                    Login ui screen
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !login -->
+                                    <!-- profile -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">profile</span>
+                                        <ul class="file-list">
+                                            <li class="file"><i>theme_cubit.dart</i>
+                                                <p>
+                                                    State management object for theme, text, color
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>theme_state.dart</i>
+                                                <p>
+                                                    State object
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !profile -->
+                                    <!-- search -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">search</span>
+                                        <ul class="file-list">
+                                            <li class="folder">
+                                                <span class="folder-toggle">widgets</span>
+                                                <ul class="file-list">
+                                                    <li class="folder">
+                                                        <span class="folder-toggle">products</span>
+                                                        <ul class="file-list">
+                                                            <li class="file"><i>search_product_card.dart</i>
+                                                                <p>
+                                                                    Search product card ui widget
+                                                                </p>
+                                                            </li>
+                                                            <li class="file"><i>search_product_view.dart</i>
+                                                                <p>
+                                                                    Search product view ui widget
+                                                                </p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="file"><i>filters_widget.dart</i>
+                                                        <p>
+                                                            Search filter drop down ui widget
+                                                        </p>
+                                                    </li>
+                                                    <li class="file"><i>search_sort.dart</i>
+                                                        <p>
+                                                            Search sort drop down ui widget
+                                                        </p>
+                                                    </li>
+                                                    <li class="file"><i>serach_history.dart</i>
+                                                        <p>
+                                                            Search historys ui widget
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="file"><i>search_page.dart</i>
+                                                <p>
+                                                    Search ui Page. When you type the search entry, you use this page.
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>search_result_page.dart</i>
+                                                <p>
+                                                    Search result ui Page. When you see searched products, you use this
+                                                    page.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !search -->
+                                    <!-- wishlist -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">wishlist</span>
+                                        <ul class="file-list">
+                                            <li class="folder">
+                                                <span class="folder-toggle">widgets</span>
+                                                <ul class="file-list">
+                                                    <li class="file"><i>sort_widget.dart</i>
+                                                        <p>
+                                                            Sort drop ui widget
+                                                        </p>
+                                                    </li>
+                                                    <li class="file"><i>wish_bottom.dart</i>
+                                                        <p>
+                                                            Wish ui widget
+                                                        </p>
+                                                    </li>
+                                                    <li class="file"><i>wish_product_card.dart</i>
+                                                        <p>
+                                                            Wish product card ui widget
+                                                        </p>
+                                                    </li>
+                                                    <li class="file"><i>wish_product_view.dart</i>
+                                                        <p>
+                                                            Wish product view ui widget
+                                                        </p>
+                                                    </li>
+                                                </ul>
+
+                                            </li>
+                                            <li class="file"><i>wish_screen.dart</i>
+                                                <p>
+                                                    Wishlist ui screen
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !wishlist -->
+                                </ul>
+                            </li>
+                            <!-- !feautures -->
+                            <!-- public -->
+                            <li class="folder">
+                                <span class="folder-toggle">public</span>
+                                <ul class="file-list">
+                                    <!-- extends -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">extends</span>
+                                        <ul class="file-list">
+                                            <li class="file"><i>in_card.dart</i>
+                                                <p>
+                                                    Container card.
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>my_cont.dart</i>
+                                                <p>
+                                                    Extend container custom funcs
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>my_image.dart</i>
+                                                <p>
+                                                    This widget can show network, asset or file images.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !extends -->
+                                    <!-- func_widgets -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">func_widgets</span>
+                                        <ul class="file-list">
+
+                                        </ul>
+                                    </li>
+                                    <!-- !func_widgets -->
+                                    <!-- pages -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">pages</span>
+                                        <ul class="file-list">
+                                            <li class="file"><i>logo_page.dart</i>
+                                                <p>
+                                                    Logo ui Page
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>page_404.dart</i>
+                                                <p>
+                                                    404 ui Page
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>prodict_detail_page.dart</i>
+                                                <p>
+                                                    Product detail ui Page
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !pages -->
+                                    <!-- ready_Input -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">ready_Input</span>
+                                        <ul class="file-list">
+                                            <li class="file"><i>card_input_format.dart</i>
+                                                <p>
+                                                    Bank card input mask #### #### #### ####
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>cool_input.dart</i>
+
+                                            </li>
+                                            <li class="file"><i>input_widget.dart</i>
+
+                                            </li>
+                                            <li class="file"><i>otp_input.dart</i>
+
+                                            </li>
+                                            <li class="file"><i>phone_input.dart</i>
+
+                                            </li>
+                                            <li class="file"><i>ready_input_base.dart</i>
+                                                <p>
+                                                    Ready input base all input controllers collect this file
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>ready_input.dart</i>
+
+                                            </li>
+                                            <li class="file"><i>search_input.dart</i>
+
+                                            </li>
+                                            <li class="file"><i>verification_input.dart</i>
+
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !ready_Input -->
+                                    <!-- scaffold -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">scaffold</span>
+                                        <ul class="file-list">
+                                            <li class="file"><i>navigation.dart</i>
+                                                <p>
+                                                    Botom navigation bar ui widget
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>top_bar.dart</i>
+
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !scaffold -->
+                                    <!-- when_widgets -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">when_widgets</span>
+                                        <ul class="file-list">
+                                            <li class="file"><i>empty_widget.dart</i>
+                                                <p>
+                                                    This widget shows when API data is empty
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>err_widget.dart</i>
+                                                <p>
+                                                    This widget shows when get error from API
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>loading_widget.dart</i>
+                                                <p>
+                                                    This widget shows when API request in progress
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !when_widgets -->
+                                    <!-- widgets -->
+                                    <li class="folder">
+                                        <span class="folder-toggle">widgets</span>
+                                        <ul class="file-list">
+                                            <li class="file"><i>check_btn.dart</i>
+                                            </li>
+                                            <li class="file"><i>circle_widget.dart</i>
+                                                <p>
+                                                    This widget helps me create circles quickly
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>redio_group.dart</i>
+
+                                            </li>
+                                            <li class="file"><i>responsive_widget.dart</i>
+                                                <p>
+                                                    State management object for theme, text, color
+                                                </p>
+                                            </li>
+                                            <li class="file"><i>texts.dart</i>
+
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- !widgets -->
+                                </ul>
+                            </li>
+                            <!-- !public -->
+                        </ul>
+                    </li>
+                    <!-- !presentation -->
+                    <li class="file"><i>injector.dart</i>
+                        <p>
+                            The file where all state management objects are collected and included in the program
+                        </p>
+                    </li>
+                    <li class="file"><i>main.dart</i>
+                        <p>
+                            Start point
+                        </p>
+                    </li>
                 </ul>
             </li>
         </ul>
